@@ -1,0 +1,141 @@
+.table {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 2px #ebe8e8;
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+}
+
+table {
+  width: 70rem;
+  margin-top: 100px;
+}
+
+th,
+td {
+  text-align: center;
+  border-bottom: 1px solid rgb(228, 214, 214);
+  padding: 20px 0 10px;
+}
+
+th {
+  font-size: 18px;
+  color: rgb(192, 120, 120);
+}
+
+.table-top {
+  position: absolute;
+  background: #7b3691;
+  border-radius: 10px;
+  width: 69.6rem;
+  padding: 20px 40px;
+  top: -40px;
+}
+
+.table-top h2 {
+  color: #f3ebeb;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.table-top h3 {
+  color: #d3d0d0;
+  text-shadow: 1px 1px #c06565;
+}
+
+.table-responsive {
+  display: none;
+}
+
+/**Responsive Design**/
+@media screen and (max-width: 1200px) {
+  table {
+    width: 54.5rem;
+  }
+
+  th,
+  td {
+    margin-right: 20px;
+  }
+
+  .table-top {
+    width: 95.5%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  table {
+    width: 48rem;
+  }
+
+  .table-top {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  table {
+    width: 42.2rem;
+  }
+
+  .table-top {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 38.2rem;
+  }
+
+  .table-top {
+    width: 93.7%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .table-non-responsive {
+    display: none;
+  }
+
+  .table-responsive {
+    display: block;
+  }
+
+  table {
+    width: 24.8rem;
+  }
+
+  .table-top {
+    width: 89.7%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  table {
+    width: 20.2rem;
+  }
+
+  .table-top {
+    width: 87.5%;
+  }
+}
+@media screen and (max-width: 390px) {
+  table {
+    width: 18.2rem;
+  }
+
+  .table-top {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 360px) {
+  table {
+    width: 16.2rem;
+  }
+
+  .table-top {
+    width: 85%;
+  }
+}

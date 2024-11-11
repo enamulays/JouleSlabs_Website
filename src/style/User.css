@@ -1,0 +1,257 @@
+.user {
+  display: flex;
+  margin-top: 100px;
+  position: relative;
+  gap: 20px;
+}
+
+.user-head {
+  position: absolute;
+  background: #7b3691;
+  border-radius: 10px;
+  width: 51rem;
+  padding: 20px 40px;
+  top: -40px;
+}
+
+.user-head h2 {
+  color: #f3ebeb;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.user-head h3 {
+  color: #d3d0d0;
+  text-shadow: 1px 1px #c06565;
+}
+
+.user-left {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 2px #ebe8e8;
+  padding: 20px 20px 20px 20px;
+  flex: 3;
+}
+
+.user-form {
+  margin-top: 80px;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-input label {
+  color: black;
+  font-size: 19px;
+}
+
+.user-input input {
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.user-input input:focus {
+  border: 0.1px solid #e700fc;
+  transition: all .3s linear;
+}
+
+.user-left-t,
+.user-left-b {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 16.2rem);
+  margin-bottom: 40px;
+}
+
+.user-left-m {
+  display: grid;
+  grid-template-columns: 25rem 25rem;
+  margin-bottom: 40px;
+  grid-gap: 20px;
+}
+
+.user-form button {
+  background: #e3dde4;
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #d1c6ca;
+  font-size: 16px;
+}
+
+.user-form button:hover {
+  background-color: rgb(209, 203, 203);
+}
+
+/** User Right Section **/
+.user-right {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 2px #ebe8e8;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.user-right-img {
+  width: 120px;
+  height: 120px;
+  transform: translate(0px, -70px);
+  background-color: #000000;
+  border-radius: 50%;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.user-right-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-right-text h3 {
+  font-size: 20px;
+  color: #797474;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.user-right-text h2 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.user-right-text p {
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.user-right-text button {
+  background: #048eff;
+  padding: 10px 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #d1c6ca;
+  font-size: 20px;
+  color: white;
+}
+
+.user-right-text button:hover {
+  background-color: #00c3ff;
+}
+
+/**Responsive Design**/
+@media screen and (max-width: 1200px) {
+  .user-head {
+    width: 40.2rem;
+  }
+
+  .user-left-t,
+  .user-left-b {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .user-left-m {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .user-head {
+    width: 32rem;
+  }
+
+  .user-left-t,
+  .user-left-b {
+    grid-template-columns: repeat(3, 157px);
+  }
+
+  .user-right-text p {
+    font-size: 15px;
+  }
+
+  .user-right-text {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .user-head {
+    width: 27.8rem;
+  }
+
+  .user-left-t,
+  .user-left-b {
+    grid-template-columns: repeat(3, 136px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user {
+    flex-direction: column;
+    gap: 50px
+  }
+
+  .user-head {
+    width: 93%;
+  }
+
+  .user-left {
+    position: relative;
+  }
+
+  .user-left-t,
+  .user-left-b {
+    grid-template-columns: repeat(3, 31%);
+  }
+
+  .user-right-text {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .user-right-img {
+    transform: translate(0px, 0px);
+  }
+
+  .user-right-text button {
+    width: 150px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .user-head {
+    width: 88.5%;
+  }
+  .user-left-t,
+  .user-left-b {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .user-left-m{
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .user-form button{
+    width: 100%;
+    margin: 20px auto 0;
+  }
+}
+@media screen and (max-width: 428px){
+  .user-head {
+    width: 86%;
+  }
+}
